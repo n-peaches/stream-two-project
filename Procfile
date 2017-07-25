@@ -1,0 +1,1 @@
+web: gunicorn us_donations:app

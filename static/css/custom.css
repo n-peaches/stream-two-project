@@ -1,0 +1,296 @@
+/******** Website ********/
+
+#background {
+    background-attachment: fixed;
+    background-image: url("../images/american-flag.jpg");
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    position: relative;
+}
+
+h1 {
+    color: #E0162B;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+h2 {
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #0052a5;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+h4 {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+h5 {
+    color: #fff;
+}
+
+.navbar {
+    background: #081013;
+}
+
+.navbar-brand {
+    font-family: 'Rye', cursive;
+}
+
+footer {
+    color: #fff;
+    display: flex;
+    text-align: center !important;
+}
+footer a {
+    color: #fff !important;
+}
+
+.btn-primary {
+    background-color: #E0162B;
+    border-color: #0052a5;
+    border-radius: 50px;
+}
+
+.btn-primary a  {
+    color: #fff !important;
+}
+
+.btn-primary a:hover  {
+    color: #0052a5 !important;
+}
+
+.btn-primary:hover {
+    background-color: #E0162B;
+    border-color: #0052a5;
+    color: #0052a5;
+}
+
+/******** Home Page ********/
+
+.main-heading {
+    color: #b37456;
+    font-family: 'Rye', cursive;
+    font-size: 115px;
+    margin-left: 50px;
+    text-align: left;
+    text-shadow: -3px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+}
+
+.home-text {
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    opacity: 0.9;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.texas-town, .graduation-pic, .cowboy {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+
+/******** Statistics Page ********/
+
+#number-projects-nd {
+   font-size: 60px;
+}
+
+#total-donations-nd {
+   font-size: 60px;
+}
+
+#total-num-of-don {
+   background: #E0162B;
+   position: relative;
+   font-size: 29px;
+   color: #fff;
+   vertical-align: middle;
+   text-align: center;
+   padding-top: 12px;
+   padding-bottom: 0;
+}
+
+.dc-chart g.row text {
+   fill: black;
+   font-size: 12px;
+}
+
+#total-projects {
+   background: #E0162B;
+   width: 200px;
+   position: relative;
+   height: 60px;
+   font-size: 29px;
+   color: white;
+   vertical-align: middle;
+   text-align: center;
+   padding-top: 12px;
+   padding-bottom: 0;
+}
+
+.dc-select-menu {
+   background: #E0162B;
+   border: none;
+   color: #fff;
+   font-size: 15px;
+   height: 31px;
+   margin-bottom: 29px;
+   margin-top: 27px;
+   padding: 4px 10px 4px 10px;
+   position: relative;
+   text-align: center;
+   vertical-align: middle;
+   width: 100%;
+}
+
+.chart-title {
+    text-align: center !important;
+    font-family: 'Archivo Black', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    color: #0052a5 !important;
+}
+
+.chart-wrapper {
+    opacity: 0.93;
+}
+
+.chart-stage {
+    display: flex;
+    justify-content: center;
+}
+
+.school-para {
+    background: #fff;
+    border-radius: 3px;
+    opacity: 0.93;
+    padding: 10px;
+
+}
+
+/******** Contact Page ********/
+
+.button-on-image {
+    position: relative;
+}
+
+.img-btn {
+    position: absolute;
+    top: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.img-btn:before {
+    content: ' ';
+    display: block;
+    height: 50%;
+}
+
+.donation-button {
+    color: #0052a5 !important;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.map-responsive{
+    height: 10px;
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+}
+.map-responsive iframe{
+	height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+/*---------- Media Query ----------*/
+
+/*---- Responsive Design for Mobile ----*/
+
+@media only screen and (max-width: 40em) {
+    h1 {
+        text-align: center !important;
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: large;
+        text-align: center !important;
+    }
+
+    .main-heading {
+        font-size: 60px;
+        margin-left: 0;
+        text-align: center !important;
+    }
+
+    .img-txt {
+        top: 0 !important;
+    }
+
+    .img-btn {
+        top: 0;
+    }
+
+    .donation-button {
+        font-size: 10px;
+    }
+
+    .chart-scroll {
+        overflow-x: scroll !important;
+    }
+}
+
+
+/*---- Responsive Design for Tablet ----*/
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .main-heading {
+        margin-left: 25px;
+    }
+
+    footer {
+        color: #3a2f30 !important;
+    }
+
+    .chart-scroll {
+        overflow-x: scroll !important;
+    }
+}

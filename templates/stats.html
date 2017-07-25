@@ -1,0 +1,205 @@
+{% extends "index.html" %}
+{% block content %}
+
+<div class="container-fluid">
+
+    <!-- Heading -->
+    <div class="col-sm-12">
+        <h1>School Donations Statistics</h1>
+    </div>
+    <!-- Heading -->
+
+    <!-- Donations Paragraph -->
+    <div class="row">
+    <div class="home-text col-sm-12">
+
+        <!-- Reset Statistics Paragraph and Button -->
+        <div class="col-sm-6">
+            <p>We have made it possible for you to select a certain state to view their particular
+                statistics or you can view certain stats by clicking on any of the charts' information.
+                If you need to start over then click on the <strong>'Reset Stats'</strong> button below.</p>
+            <button class="btn btn-primary" type="button" onclick="dc.filterAll();dc.renderAll();">Reset Stats</button>
+        </div>
+        <!-- Reset Statistics Paragraph and Button -->
+
+        <!-- More Information Paragraph and Button -->
+        <div class="col-sm-6">
+            <p>As you can tell by the <strong>'State Donation Totals'</strong> chart there are a few states that have
+                much higher donations. If you would like to find out more about how we plan on making
+                things much better for Texas then click the <strong>'Find Out More'</strong> button below.</p>
+            <button class="btn btn-primary" type="button" autofocus onclick="introJs().start();">Find Out More</button>
+        </div>
+        <!-- More Information Paragraph and Button -->
+    </div>
+    </div>
+    <!-- Donations Paragraph -->
+
+    <div class="row">
+    <!-- Choose a State -->
+    <div class="col-sm-4" data-step="1" data-intro="Here you can choose which specific state you
+    would like to see the donation details for." style="font-weight: normal" data-position="top">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+                State of Donation:
+            </div>
+            <div class="chart-stage">
+                <div id="state-donation-select"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Choose a State -->
+
+    <!-- Total Number of Donations -->
+    <div class="col-sm-4" data-step="2" data-intro="These are the total number of donations
+    received by DonorChoose.org." style="font-weight: normal" data-position="top">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+                Total Number of Donations
+            </div>
+            <div class="chart-stage" id="total-num-of-don">
+                <div id="number-projects-nd"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Total Number of Donations -->
+
+    <!-- Total Donations -->
+    <div class="col-sm-4" data-step="3" data-intro="The total number of donations
+    received in USD.  We would like to help double that by making people more aware of the need for
+    donations in education." style="font-weight: normal" data-position="top">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+                Total Donations
+            </div>
+            <div class="chart-stage">
+                <div id="total-donations-nd">$ </div>
+            </div>
+        </div>
+    </div>
+    <!-- Total Donations -->
+    </div>
+
+    <div class="row">
+    <!-- Time Line Chart -->
+    <div class="col-sm-9" data-step="4" data-intro="This line chart shows the increase and decrease of all
+    donations between 2002 to 2006. Between July and October 2006 there was a great number of donations (roughly
+    3000), we will make sure that that becomes a steady number of donations." style="font-weight: normal" data-position="top">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+                Yearly Number of Donations
+            </div>
+            <div class="chart-stage chart-scroll">
+                <div id="time-chart"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Time Line Chart -->
+
+    <!-- Poverty Bar Graph -->
+    <div class="col-sm-3" data-step="5" data-intro="Here we have the four different levels of
+    poverty.  These need to become a more steady amount and we believe that with our help
+    they will." style="font-weight: normal" data-position="top">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+                Poverty Level
+            </div>
+            <div class="chart-stage">
+                <div id="poverty-level-row-chart"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Poverty Bar Graph -->
+    </div>
+
+    <div class="row">
+    <!-- School Area Pie Chart -->
+    <div class="col-sm-3" data-step="6" data-intro="These are the different types of areas
+    where the donations were received.  As you can see, there is a much greater Urban donation area,  people
+    need to focus more on Rural areas, and we will help educate people about this." style="font-weight: normal" data-position="top">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+                Type of Area
+            </div>
+            <div class="chart-stage">
+                <div id="school-area-chart"></div>
+            </div>
+        </div>
+    </div>
+    <!-- School Area Pie Chart -->
+
+    <!-- Donations in States Bar Graph -->
+    <div class="col-sm-9" data-step="7" data-intro="As you can see from this graph the
+    funding for Texas is not the lowest donation state but it nowhere near New York.
+    We will be focusing on changing this and hopefully, in the not too distant future
+    reaching the same donation levels as New York." style="font-weight: normal" data-position="top">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+                State Donation Totals
+            </div>
+            <div class="chart-stage chart-scroll">
+                <div id="state-donations-graph"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Donations in States Bar Graph -->
+    </div>
+
+    <div class="row">
+    <!-- Resources Bar Graph -->
+    <div class="col-sm-4" data-step="8" data-intro="As you can see the supplies resources
+    are very large.  Our goal would be to increase each of the other resource types by 50%
+    if not more." style="font-weight: normal" data-position="top">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+                Types of Resources
+            </div>
+            <div class="chart-stage">
+                <div id="resource-type-row-chart"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Resources Bar Graph -->
+
+    <!-- Funding Pie Chart -->
+    <div class="col-sm-4" data-step="9" data-intro="We need to decrease the number of expired funds
+    and aim for each fund to be completed." style="font-weight: normal" data-position="top">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+                Funding Status
+            </div>
+            <div class="chart-stage">
+                <div id="funding-chart"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Funding Pie Chart -->
+
+    <!-- Primary Focus Areas Bar Chart -->
+    <div class="col-sm-4" data-step="10" data-intro="Literacy and language is a very important thing to focus
+    on but we feel that the special needs and health and sport focus areas need to increase drastically, we will
+    make an effort to improve these over a space of a few months." style="font-weight: normal" data-position="top">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+                Primary Focus Areas
+            </div>
+            <div class="chart-stage">
+                <div id="primary-focus-area"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Primary Focus Areas Bar Chart -->
+    </div>
+</div>
+{% endblock %}
+
+<!-- JS Scripts -->
+{% block graphscript %}
+    <script src="{{ url_for ('static', filename='lib/js/jquery.min.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/crossfilter.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/d3.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/dc.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/queue.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
+    <script src="{{ url_for ('static', filename='js/graphs.js')}}"></script>
+{% endblock %}
