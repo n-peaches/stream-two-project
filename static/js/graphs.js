@@ -63,7 +63,7 @@ function makeGraphs(error, projectsJson) {
          return d["total_donations"];
      });
 
-     var max_state = totalDonationsByState.top(1)[0].value;
+      var max_state = totalDonationsByState.top(1)[0].value;
 
 
      //Define values (to be used in charts)
