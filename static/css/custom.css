@@ -234,7 +234,7 @@ footer a {
 @media only screen and (max-width: 40em) {
     h1 {
         text-align: center !important;
-        font-size: 40px;
+        font-size: 35px;
     }
 
     h2 {
@@ -266,6 +266,10 @@ footer a {
 
     .chart-scroll {
         overflow-x: scroll !important;
+    }
+
+    #total-donations-nd {
+        font-size: 40px;
     }
 }
 

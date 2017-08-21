@@ -59,14 +59,16 @@ def policy():
 @app.route('/unitedstatesDonations/usdonations')
 def donation_project():
 
-    # Configurations to Run Locally:
-    # connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
+    """
+    Configurations to Run Locally:
+    connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
+    """
 
-    # Configuration to run on Heroku
+    # Configuration to run on Heroku:
     connection = MongoClient(MONGO_URI)
 
     collection = connection[DBS_NAME][COLLECTION_NAME]
-    usdonations = collection.find(projection=FIELDS, limit=30000)
+    usdonations = collection.find(projection=FIELDS, limit=25000)
 
     json_projects = []
     for project in usdonations:
