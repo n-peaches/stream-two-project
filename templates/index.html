@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Governor of TEXAS</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../static/images/favicon.ico">
-    <!-- jQuery Script -->
+    <!-- Scripts Needed -->
     <script src="{{ url_for ('static', filename='lib/js/jquery.min.js') }}"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $("#loader").fadeOut("slow")
+        })
+    </script>
     <!-- CSS Links -->
     <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/keen-dashboards.css')}}">
@@ -21,6 +26,22 @@
 </head>
 
 <body class="application" id="background">
+
+<!-- Page Loader -->
+<!--
+I usd the following code to help build my page loader:
+https://codepen.io/atcchh/pen/vGJPEJ?limit=all&page=2&q=page+loader
+https://stackoverflow.com/questions/1853662/how-to-show-page-loading-div-until-the-page-has-finished-loading?noredirect=1&lq=1
+-->
+<div id="loader">
+    <div class="load-three-bounce">
+        <div class="load-child bounce1"></div>
+        <div class="load-child bounce2"></div>
+        <div class="load-child bounce3"></div>
+        <p style="color: white">LOADING</p>
+    </div>
+</div>
+<!-- Page Loader -->
 
 <!-- Header -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
