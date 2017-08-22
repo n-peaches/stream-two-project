@@ -1,9 +1,9 @@
 # Stream Two Project
-===================
+======
 
 ### Data Driven Website
 
-This is my final project for Stream Two of my Full Stack Web Development course through [Code Institute] (https://www.codeinstitute.net/)
+This is my final project for Stream Two of my Full Stack Web Development course through [Code Institute](https://www.codeinstitute.net/)
 
 The data I have used is from [Donor Choose](https://www.donorschoose.org/)
 
@@ -24,8 +24,9 @@ The data I have used is from [Donor Choose](https://www.donorschoose.org/)
 ### Testing
 
 * I have tested the site on browsers such as Google Chrome, Mozilla Firefox, and Microsoft Edge.
+* I tested my site on a few different devices such as Windows laptops, a Mac Book, an iPad, iPhone, Nokia Lumias, as well as a Samsung.
 * I used Google Chrome and Mozilla Firefox developer tools to check my code.
-* I used [W3C Markup Validation Service](https://validator.w3.org/)
+* I used [W3C Markup Validation Service](https://validator.w3.org/) to check my code.
 
 ### Resources
 
