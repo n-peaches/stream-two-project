@@ -1,13 +1,13 @@
-#Stream Two Project
+# Stream Two Project
 ===================
 
-###Data Driven Website
+### Data Driven Website
 
 This is my final project for Stream Two of my Full Stack Web Development course through [Code Institute] (https://www.codeinstitute.net/)
 
-The data I have used is from [Donor Choose] (https://www.donorschoose.org/)
+The data I have used is from [Donor Choose](https://www.donorschoose.org/)
 
-###The Technologies Used for the Site:
+### The Technologies Used for the Site:
 
 	*HTML
 	*CSS
@@ -21,17 +21,17 @@ The data I have used is from [Donor Choose] (https://www.donorschoose.org/)
 	*Crossfilter.js
 	*Queue.js
 
-###Testing
+### Testing
 
 * I have tested the site on browsers such as Google Chrome, Mozilla Firefox, and Microsoft Edge.
 * I used Google Chrome and Mozilla Firefox developer tools to check my code.
-* I used [W3C Markup Validation Service] (https://validator.w3.org/)
+* I used [W3C Markup Validation Service](https://validator.w3.org/)
 
-###Resources
+### Resources
 
-All images are from [Unsplash] (https://unsplash.com/)
+All images are from [Unsplash](https://unsplash.com/)
 All code based off other peoples' code has been added to the comments in the project.
 
-###Deployment
+### Deployment
 
-My project has been deployed to [Heroku] (https://mighty-dusk-45888.herokuapp.com/)
+My project has been deployed to [Heroku](https://mighty-dusk-45888.herokuapp.com/)
