@@ -1,5 +1,4 @@
 # Stream Two Project
-======
 
 ### Data Driven Website
 
@@ -30,8 +29,8 @@ The data I have used is from [Donor Choose](https://www.donorschoose.org/)
 
 ### Resources
 
-All images are from [Unsplash](https://unsplash.com/)
-All code based off other peoples' code has been added to the comments in the project.
+- All images are from [Unsplash](https://unsplash.com/)
+- All code based off other peoples' code has been added to the comments in the project.
 
 ### Deployment
 
