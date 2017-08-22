@@ -8,17 +8,17 @@ The data I have used is from [Donor Choose](https://www.donorschoose.org/)
 
 ### The Technologies Used for the Site:
 
-	*HTML
-	*CSS
-	*JavaScript
-	*jQuery
-	*Bootstrap
-	*Flask
-	*Mongo DB
-	*D3.js
-	*Dc.js
-	*Crossfilter.js
-	*Queue.js
+	* HTML
+	* CSS
+	* JavaScript
+	* jQuery
+	* Bootstrap
+	* Flask
+	* Mongo DB
+	* D3.js
+	* Dc.js
+	* Crossfilter.js
+	* Queue.js
 
 ### Testing
 
