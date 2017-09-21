@@ -4,7 +4,9 @@
 
 This is my final project for Stream Two of my Full Stack Web Development course through [Code Institute](https://www.codeinstitute.net/)
 
-The data I have used is from [Donor Choose](https://www.donorschoose.org/).  After testing the site on various devices I have decided to lower the amount of donations from 25000 to 20000, as the site was taking too long to load.
+I am currently running for Governer of Texas and to prove that I should win the peoples' votes I have used data from [Donor Choose](https://www.donorschoose.org/) to show the statistics of donations towards schools across the United States and how I intend to raise awareness for more donations in Texas.
+
+ After testing the site on various devices I have decided to lower the amount of donations from 25000 to 20000, as the site was taking too long to load.
 
 ### The Technologies Used for the Site:
 
